@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".login_activity"
+        android:background="#a0a0a0"
+        >
+
+
+        <EditText
+            android:id="@+id/pw_text"
+            android:background="@drawable/login_background"
+            android:layout_width="match_parent"
+            android:hint = "PW : "
+            android:textSize="50sp"
+            android:layout_margin="20dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toTopOf="@+id/button_login"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:inputType="textPassword"
+            android:paddingStart="20dp"
+
+
+            ></EditText>
+
+
+        <EditText
+            android:id="@+id/email_text"
+            android:paddingStart="20dp"
+            android:inputType="textEmailAddress"
+            android:layout_margin="20dp"
+            android:background="@drawable/login_background"
+            android:layout_width="match_parent"
+            android:hint = "Email : "
+            android:textSize="50sp"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toTopOf="@+id/pw_text"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"></EditText>
+
+
+        <android.widget.Button
+            android:id="@+id/button_login"
+            android:text="로그인하기!!"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="200dp"
+            android:background="#d0d0d0"
+
+
+            >
+
+        </android.widget.Button>
+
+        <android.widget.Button
+            android:id="@+id/register_login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#d0d0d0"
+            android:text="회원가입하기!!"
+
+
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.501"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/button_login"
+            app:layout_constraintVertical_bias="0.077"
+
+            >
+
+        </android.widget.Button>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>
